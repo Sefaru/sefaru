@@ -4,7 +4,7 @@
 
 🔧 **I know:** Lua, C#
 
-📝 **I'm in:** DelmainRP Team (Gmod development)
+📝 **I'm in:** DelmainRP team (Gmod development)
 
 😁 **Short me:** Developer of various software. GNU/Linux user, tester, system administrator
 
