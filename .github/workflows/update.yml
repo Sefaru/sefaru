@@ -24,8 +24,12 @@ jobs:
           cache: yarn
       - name: Install dependencies
         run: yarn install --frozen-lockfile --non-interactive
+        with:
+          path: blog-src
       - name: Build
         run: yarn build
+        with:
+          path: blog-src
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Upload artifact
