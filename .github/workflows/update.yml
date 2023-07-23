@@ -15,6 +15,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Set folder
+        run: cd blog-src 
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up Node.js
@@ -23,7 +25,7 @@ jobs:
           node-version: 16.x
           cache: yarn
       - name: Install dependencies
-        run: cd blog-src && yarn install --frozen-lockfile --non-interactive
+        run:  yarn install --frozen-lockfile --non-interactive
       - name: Build
         run: yarn build
       - name: Setup Pages
