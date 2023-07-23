@@ -1,10 +1,7 @@
-## About Me:
+# Application Software Developer
+I develop various software ranging from bots for social networks and messengers to standalone full-featured applications.
 
-📍 **Joined:** June 29, 2023
-
-🔧 **I know:** Lua, C#
-
-😁 **Short me:** Developer of various software. GNU/Linux user, tester, system administrator
-
-💼 **Work Experience & Projects:** none
-
+## My Projects 
+Nothing.
+## Social Links
+Nothing.
