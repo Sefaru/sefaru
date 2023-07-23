@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set folder
-        run: cd blog-src 
+        run: ls
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up Node.js
