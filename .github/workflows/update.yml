@@ -15,8 +15,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Set folder
-        run: cd /home/runner/work/sefaru/sefaru/blog-src
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up Node.js
@@ -24,6 +22,7 @@ jobs:
         with:
           node-version: 16.x
           cache: yarn
+          cache-dependency-path: './blog-src/yarn.lock'
       - name: Install dependencies
         run:  yarn install --frozen-lockfile --non-interactive
       - name: Build
