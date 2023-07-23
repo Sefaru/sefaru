@@ -23,13 +23,9 @@ jobs:
           node-version: 16.x
           cache: yarn
       - name: Install dependencies
-        run: yarn install --frozen-lockfile --non-interactive
-        with:
-          path: blog-src
+        run: cd blog-src && yarn install --frozen-lockfile --non-interactive
       - name: Build
         run: yarn build
-        with:
-          path: blog-src
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Upload artifact
